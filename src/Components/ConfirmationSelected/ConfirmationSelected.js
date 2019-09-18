@@ -17,6 +17,19 @@ function ConfirmationSelected(props) {
         }
      
     }
+    function setName(position, name, jobTitle){
+        if (position !== ""){
+            name = name === "" ? "CANDIDATO " : name;
+            return (
+
+                <div className="ml-6 candidate">
+                    <p class="candidato" style={{marginBottom: "1%;"}}>{name} A</p>
+                    <p class="candidato2">{jobTitle}</p>
+                </div>
+            );
+        }
+       
+    }
     return (
         <div className="row">
             <div className="col-md-12">
@@ -30,10 +43,10 @@ function ConfirmationSelected(props) {
                                     <img src={props.src} alt="Lights" className="img-thumbnail" style={{border: "0px"}}/>
                                 
                             </div>
-                                <div className="ml-6" style={{textAlign:"center",overflow:"hidden",fontSize:"x-large",fontWeight: "bold",paddingTop:"1%"}}>
-                                    <p className="candidato2"></p>
-                                </div>
-
+                            <div className="ml-6" style={{textAlign:"center",overflow:"hidden",fontSize:"x-large",fontWeight: "bold",paddingTop:"1%"}}>
+                                <p className="candidato2"></p>
+                            </div>
+                            {setName(props.number, props.name, props.jobTitle)}
                         </div>
                     </div>
                 </a>

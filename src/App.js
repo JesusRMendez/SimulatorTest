@@ -19,32 +19,39 @@ class App extends React.Component{
     currentOrder: "teamSelected",
     currentConfirmationImage: "",
     currentNumber: "",
+    currentName: "",
+    currentJobTitle: "",
     nextViewName: "",
   }
   nextView(view){
     this.setState({currentOrder: view});
   }
-  setCurrentConfirmation(currentImage, i, nextViewName){
-    this.setState({currentConfirmationImage: currentImage, currentNumber: i, nextViewName: nextViewName});
+  setCurrentConfirmation(currentImage, i, nextViewName, name, jobTitle){
+    this.setState({currentConfirmationImage: currentImage, 
+                  currentName: name,
+                  currentJobTitle:jobTitle,
+                    currentNumber: i, 
+                    nextViewName: nextViewName});
     this.nextView("confirmation");
   }
   generateThumbs(count, image, indexImage, candidateName, positionName, nextViewName){
-  var thumbails = [];
-  var self = this;
-    for(var i = 1; i<count; i++){
-    let currentImage = "";
-    if (i === count){
-      currentImage ="images/none.PNG";
+    var thumbails = [];
+    var self = this;
+    for(var i = 1; i<=count; i++){
+      let currentImage = "";
+      let currentCandidateName = "";
+      if (i === count){
+        currentImage ="images/none.PNG";
       }else if (i !== indexImage){
         currentImage ="images/candidato.PNG";
       }else{
         currentImage = image;
+        currentCandidateName = candidateName;
       }
-      
-      thumbails.push(<Thumbail positionName={positionName} positionNumber={i} 
-            src={currentImage}
-            canditateName={indexImage === i ? candidateName : ""}
-            onclick={this.setCurrentConfirmation.bind(self, currentImage, i, nextViewName)} />)
+        thumbails.push(<Thumbail positionName={positionName} positionNumber={i} 
+              src={currentImage}
+              canditateName={currentCandidateName}
+              onclick={this.setCurrentConfirmation.bind(self, currentImage, i, nextViewName, currentCandidateName, positionName)} />)
     }
     return thumbails;
   }
@@ -63,13 +70,16 @@ class App extends React.Component{
       </div>
     )
   }
-  showConfirmation(image, indexConfirmation, nextViewName){
-    return <ConfirmationSelected src={image} number={indexConfirmation}
-          onclick={this.nextView.bind(this, nextViewName)} />
+  showConfirmation(image, indexConfirmation, nextViewName, name, jobTitle, ){
+    return <ConfirmationSelected src={image} 
+          number={indexConfirmation}
+          onclick={this.nextView.bind(this, nextViewName)} 
+          name={name} jobTitle={jobTitle}/>
   }
   showTeamConfirmation(indexConfirmation){
     return <ConfirmationSelected src={this.state.imagesTeam[this.state.teamSelected]} 
-        onclick={this.nextView.bind(this, indexConfirmation)} number="" />
+        onclick={this.nextView.bind(this, indexConfirmation)} 
+        number="" name="" jobTitle="" />
   }
   showPresident(){
     return (
@@ -93,7 +103,10 @@ class App extends React.Component{
         case "presidentSelected":
             return this.showPresident();
         case "confirmation":
-            return this.showConfirmation(this.state.currentConfirmationImage,  this.state.currentNumber, this.state.nextViewName);
+            return this.showConfirmation(this.state.currentConfirmationImage, 
+                               this.state.currentNumber, this.state.nextViewName, 
+                               this.state.currentName,
+                               this.state.currentJobTitle);
           
       default:
         return "";

@@ -2544,3 +2544,6 @@ a:hover{
       height: auto;
   }
 }
+.candidate{
+    text-align:center;overflow:hidden;font-size:x-large;font-weight: bold;padding-top:1%;
+  }
