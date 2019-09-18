@@ -4,6 +4,7 @@ import './css/App.css';
 import TitleTeam from './Components/Headers/HeaderTitle';
 import BigTeam from './Components/BigTeam/BigTeam';
 import ConfirmationSelected from './Components/ConfirmationSelected/ConfirmationSelected';
+import Thumbail from './Components/Thumbail/Thumbail';
 
 const presidentPhotoIndex=2;
 const regidorPhotoIndex = 18;
@@ -11,6 +12,7 @@ const regidorPhotoIndex = 18;
 class App extends React.Component{
   state = {
     imagesTeam: ["images/abanico.png", "images/prm.png", "./images/ndv.png"],
+    photos: ["images/abanico.png"],
     TeamName: ["Partido Abanico", "PRM", "No Deseo Votar"],
     teamSelected: 0,
     viewOrder: ["teamSelected", "teamConfirmation", "presidentSelected"],
@@ -19,10 +21,19 @@ class App extends React.Component{
   nextView(view){
     this.setState({currentOrder: view});
   }
+  generateThumbs(count, image, indexImage, candidateName, positionName){
+  var thumbails = [];
+    for(var i = 1; i<count; i++){
+      thumbails.push(<Thumbail positionName={positionName} positionNumber={i} 
+            image={indexImage === i ? image : ""} lastImage={i === count} canditateName={indexImage === i ? candidateName : ""} />)
+    }
+    return thumbails;
+  }
   selectTeam(index){
     this.setState({teamSelected: index, currentOrder: "teamConfirmation"});
-
   }
+
+  //Views
   showTeam(){
     return (
       <div class="row">
@@ -33,16 +44,31 @@ class App extends React.Component{
       </div>
     )
   }
-  showTeamConfirmation(){
+  showTeamConfirmation(indexConfirmation){
     return <ConfirmationSelected src={this.state.imagesTeam[this.state.teamSelected]} 
-        onclick={this.nextView.bind(this, "presidentSelected")} />
+        onclick={this.nextView.bind(this, indexConfirmation)} />
   }
+  showPresident(){
+    return (
+      <div className="row">
+        <div className="col-md-12">
+          <div className="row">
+              {this.generateThumbs(16, this.state.photos[0], 2, "Luis Abinader", "PRESIDENTE(A)")}
+          </div>
+          </div>
+        </div>
+    );
+  }
+
   viewScreen(){
+    console.log(this.state.currentOrder);
     switch(this.state.currentOrder){
       case "teamSelected":
         return this.showTeam();
       case "teamConfirmation":
-        return this.showTeamConfirmation();
+        return this.showTeamConfirmation("presidentSelected");
+        case "presidentSelected":
+            return this.showPresident();
       default:
         return "";
     }
