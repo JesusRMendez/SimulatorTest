@@ -1,0 +1,2546 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI","Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1 !important;
+  color: #f8f9fa !important;
+  text-align: left;
+  background-color: #fff
+}
+.bg-Index {
+  background-color: #1b508c !important;
+}
+.bg-primary {
+  background-color: #54301a !important;
+}
+.hencabezado {
+  margin-bottom: .5rem;
+  font-weight: 300;
+  line-height: .9
+}
+
+fixed-bottom {
+  position: fixed;
+  right: 7px;
+  bottom: 8px;
+  left: 8px;
+  z-index: 1034
+}
+
+.parrafo {
+  margin-top: 0;
+  margin-bottom: .58rem
+}
+
+body, html {
+  height: 100%
+}
+
+#wrap {
+  min-height: 100%
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 150px
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px;
+  height: 150px;
+  clear: both;
+  padding-top: 91px
+}
+
+#imgLogo {
+  width: 100%;
+  margin-right: 5px
+}
+
+@media screen and (min-width:992px) {
+  .topnav-centered label {
+      float: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 18px
+  }
+
+  .hencabezado {
+      margin-bottom: .5rem;
+      font-weight: 300;
+      line-height: .9
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+  .topnav-centered label {
+      padding-top: 1.2%
+  }
+
+  .hencabezado {
+      margin-bottom: .5rem;
+      font-weight: 300;
+      line-height: .9
+  }
+}
+
+.capitalize {
+  text-transform: capitalize
+}
+
+.whiteLabel {
+  color: #fff;
+  font-weight: initial !important
+}
+
+.blick {
+  margin-bottom: .5rem;
+  font-weight: 700 !important;
+  line-height: 1.1
+}
+
+.container {
+  padding-left: 1% !important;
+  padding-right: 1% !important
+}
+
+.widthImagen {
+  width: 100%
+}
+
+.colorblack {
+  color: #000
+}
+
+
+
+
+
+
+
+
+/*@media screen and (max-width:1198px) {
+    .NombreCandidatoFont {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0;
+        margin-left: 15% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 94.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+    .PositionCandidatoDiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 3em !important;
+        margin-right: 0% !important;
+        margin-top: 3% !important;
+    }
+
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 24.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 82% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14% !important;
+        margin-left: -19% !important;
+        margin-top: -14% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 52.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: -3% !important;
+    }
+}*/
+
+/*@media screen and (max-width:500px) {
+    .NombreCandidatoFont {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0;
+        margin-left: 15% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 94.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:1144px) {
+    .NombreCandidatoFont {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0;
+        margin-left: 15% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 94.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:695px) {
+    .NombreCandidatoFont {
+        font-size: 39% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0;
+        margin-left: 15% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 94.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:1150px) {
+    .NombreCandidatoFont {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0;
+        margin-left: 15% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 94.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 24.4% !important;
+        width: 13% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 77% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 18%;
+        margin-top: -23% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:1050px) {
+    .NombreCandidatoFont {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0 !important;
+        margin-left: 15% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 94.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 8% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 24.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 64% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -14% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:990px) {
+    .NombreCandidatoFont {
+        font-size: 25% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -12px !important;
+        margin-left: 26% !important;
+    }
+    .elementH6 {
+        margin-top: -2.8% !important;
+    }
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+
+}*/
+
+/*@media screen and (max-width:790px) {
+    .NombreCandidatoFont {
+        font-size: 25% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -12px !important;
+        margin-left: 26% !important;
+    }
+
+    .elementH6 {
+        margin-top: -2.8% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:840px) {
+    .NombreCandidatoFont {
+        font-size: 25% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -13px !important;
+        margin-left: 21% !important;
+        margin-right: -6% !important;
+    }
+
+    .elementH6 {
+        margin-top: -2.8% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:710px) {
+    .NombreCandidatoFont {
+        font-size: 34% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 3px !important;
+        margin-left: 19% !important;
+        margin-right: 0% !important;
+    }
+
+    .elementH6 {
+        margin-top: -2.8% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:620px) {
+    .NombreCandidatoFont {
+        font-size: 34% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 3px !important;
+        margin-left: 19% !important;
+        margin-right: 0% !important;
+    }
+
+    .elementH6 {
+        margin-top: -2.8% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 1% !important;
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: 0 !important;
+        font-size: large !important;
+    }
+
+    .PositionCandidatoDiv {
+        position: absolute;
+        z-index: 1 !important;
+        color: #000 !important;
+        width: 25% !important;
+        text-align: center !important;
+        padding-top: 7% !important;
+    }
+}*/
+
+/*@media screen and (max-width:320px) {
+
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-left {
+        margin-left: -31% !important
+    }
+
+    .margin-right {
+        margin-right: -31% !important
+    }
+
+    .NombrePartido {
+        margin-left: -32% !important
+    }
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFont {
+        font-size: 84% !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 39% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0;
+        margin-left: 15%
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-width:480px) {
+    #inner {
+        width: calc(100% - 80px)
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+}*/
+
+/*@media screen and (max-width:640px) {
+
+    #dobleCandidato {
+        width: 30%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .NombreCandidato {
+        text-align: center;
+        color: #000 !important;
+        font-size: .8rem !important
+    }
+
+    .NombreCandidatoConfirma {
+        text-align: center;
+        color: #000 !important;
+        font-size: 1.8rem !important
+    }
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -24.4% !important
+    }
+
+    .imagtd {
+        width: 48% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -24.4% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-left {
+        margin-left: -25.4% !important
+    }
+
+    .imgCargoConfirrmar {
+        width: 100% !important;
+        margin-right: -24.4% !important
+    }
+
+    .NombrePartido {
+        margin-left: -22% !important
+    }
+
+    .elementH6 {
+        margin-top: 0 !important
+    }
+
+    .tr {
+        background-color: #1b508c !important;
+        color: #fff !important;
+        font-weight: 700 !important;
+        font-size: 17px !important;
+        overflow: hidden !important;
+        text-align: left !important
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 25% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -4% !important;
+        margin-left: 18% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 85% !important;
+        margin-top: 79% !important;
+        margin-left: -2% !important;
+        padding: 0 !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 1.7em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 35.4% !important;
+        width: 14% !important;
+    }
+    .NombreCandidatoFontA {
+        font-size: 0.5em !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-left: 21% !important;
+        margin-top: -44% !important;
+        width: 72% !important;
+    }
+    .NombreCandidatodivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 62.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: 10% !important;
+        margin-left: -11% !important;
+    }
+}*/
+
+/*@media only screen and (max-width:720px) {
+    h1 {
+        font-size: 28px
+    }
+
+    h3 {
+        font-size: 16px
+    }
+
+    h4 {
+        font-size: 16px
+    }
+    #dobleCandidato {
+        width: 30%
+    }
+
+    #tripleCandidato {
+        width: 33%
+    }
+
+    .img {
+        width: 80% !important
+    }
+
+    #Titulo3 {
+        margin-left: 25% !important;
+        margin-top: 0 !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .imagenConfirmar {
+        width: 60% !important;
+        text-align: center
+    }
+}*/
+
+/*@media screen and (max-width:445px) {
+    #dobleCandidato {
+        width: 27%;
+        margin-left: 4.2% !important
+    }
+
+    #tripleCandidato {
+        width: 33%
+    }
+
+    #imgPartido {
+        width: 80% !important
+    }
+
+    #imgCargo {
+        width: 80% !important
+    }
+
+    #Titulo3 {
+        margin-left: 9% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+}
+
+@media screen and (max-width:3650px) {
+    .img {
+        width: 38%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+}*/
+
+/*@media screen and (min-width:600px) and (max-width:800px) {
+    #Titulo3 {
+        margin-left: 30% !important;
+        z-index: 0;
+        margin-top: -3.3% !important
+    }
+
+    .img {
+        width: 38%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-left {
+        margin-left: -7% !important
+    }
+
+    .margin-right {
+        margin-right: -7% !important
+    }
+
+    .elementH6 {
+        margin-top: -3% !important
+    }
+
+    .NombrePartido {
+        margin-left: -7% !important
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+}*/
+
+/*@media only screen and (min-device-width:1366px) and (max-device-height:1024px) and (-webkit-min-device-pixel-ratio:2) and (orientation:landscape) {
+    #Titulo3 {
+        margin-left: 30% !important;
+        z-index: 0;
+        margin-top: -3.3% !important
+    }
+
+    .img {
+        width: 38%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-left {
+        margin-left: -7% !important
+    }
+
+    .margin-right {
+        margin-right: -7% !important
+    }
+
+    .NombrePartido {
+        margin-left: -7% !important
+    }
+
+    .PositionCandidato {
+        margin-bottom: 0 !important;
+        font-size: 76.5% !important
+    }
+}*/
+
+/*@media screen and (min-width:893px) and (max-width:1024px) {
+    #Titulo3 {
+        margin-left: 35% !important;
+        z-index: 0;
+        margin-top: -2.5% !important
+    }
+
+    .img {
+        width: 45%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-left {
+        margin-left: -8% !important
+    }
+
+    .margin-right {
+        margin-right: -8% !important
+    }
+
+    .elementH6 {
+        margin-top: -3% !important
+    }
+
+    .NombrePartido {
+        margin-left: -3% !important
+    }
+}*/
+
+/*@media screen and (min-width:1025px) and (max-width:1199px) {
+    #Titulo3 {
+        margin-left: 35% !important;
+        z-index: 0;
+        margin-top: -2.5% !important
+    }
+
+    .img {
+        width: 48%
+    }
+
+    .margin-right {
+        margin-right: -7.4% !important
+    }
+
+    .margin-left {
+        margin-left: -7.4% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+}*/
+
+/*@media screen and (min-width:800px) and (max-width:991px) {
+    #Titulo3 {
+        margin-left: 31% !important;
+        z-index: 0;
+        margin-top: -3.4% !important
+    }
+
+    .img {
+        width: 62%
+    }
+
+    .elementH6 {
+        margin-top: -2% !important
+    }
+
+    .margin-right {
+        margin-right: -11% !important
+    }
+
+    .margin-left {
+        margin-left: -11% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+}*/
+
+/*@media screen and (min-width:698px) and (max-width:923px) {
+    #Titulo3 {
+        margin-left: 31% !important;
+        z-index: 0;
+        margin-top: -3.4% !important
+    }
+
+    .img {
+        width: 60%
+    }
+
+    .margin-right {
+        margin-right: -10.4% !important
+    }
+
+    .margin-left {
+        margin-left: -10.4% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-top {
+        margin-top: -2% !important
+    }
+
+    .elementH6 {
+        margin-top: -0.8% !important
+    }
+}*/
+
+/*@media screen and (min-width:600px) and (max-width:767px) {
+    #Titulo3 {
+        margin-left: 24% !important;
+        z-index: 0;
+        margin-top: -.6% !important
+    }
+
+    .img {
+        width: 37%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+}*/
+
+/*@media screen and (min-device-width:414px) and (max-device-width:736px) {
+    #tripleCandidato {
+        width: 33%
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -21.4% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -21.4% !important
+    }
+
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 26% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.6% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 59% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-left: 1% !important;
+        margin-top: -37% !important;
+        width: 100% !important;
+    }
+
+
+    .NombreCandidatodivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 47.9% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: 0% !important;
+        margin-left: 2% !important;
+    }
+}*/
+
+/*@media screen and (max-width: 823px), screen and (max-height: 411px) {
+   
+}*/
+
+/*@media screen and (device-aspect-ratio:40/71) {
+    #dobleCandidato {
+        width: 27%;
+        margin-left: 4.2% !important
+    }
+
+    #tripleCandidato {
+        width: 33%
+    }
+
+    #imgPartido {
+        width: 80% !important
+    }
+
+    #imgCargo {
+        width: 80% !important
+    }
+
+    #Titulo3 {
+        margin-left: 9% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    #imgLogo {
+        width: 100% !important;
+        margin-right: 5px
+    }
+
+    .elementH6 {
+        margin-top: 0 !important
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 27% !important;
+        font-weight: 500 !important;
+        line-height: 1 !important;
+        margin-top: -20%;
+        margin-left: 24%
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (max-device-width:640px) {
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -24.4% !important
+    }
+
+    .imagtd {
+        width: 48% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -24.4% !important
+    }
+
+    .capitalize {
+        text-transform: capitalize
+    }
+
+    .margin-left {
+        margin-left: -25.4% !important
+    }
+
+    .imgCargoConfirrmar {
+        width: 100% !important;
+        margin-right: -24.4% !important
+    }
+
+    .NombrePartido {
+        margin-left: -22% !important
+    }
+
+    .elementH6 {
+        margin-top: 0 !important
+    }
+
+    .tr {
+        background-color: #1b508c !important;
+        color: #fff !important;
+        font-weight: 700 !important;
+        font-size: 17px !important;
+        overflow: hidden !important;
+        text-align: left !important
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 29% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -4%;
+        margin-left: 26%
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 63%;
+        margin-top: 79% !important;
+        margin-left: -6% !important;
+        padding: 0 !important
+    }
+}*/
+
+/*@media screen and (device-height:731px) {
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 29% !important;
+        font-weight: 500 !important;
+        line-height: 1.2 !important;
+        margin-top: -2% !important;
+        margin-left: 0% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 63.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: -6% !important;
+    }
+    .elementH6 {
+        margin-top: 0.2% !important
+    }
+
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -21.4% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -21.4% !important
+    }
+    .imgCargoConfirrmar {
+        width: 100% !important; 
+        margin-right: -21.4% !important;
+    }
+
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 33%;
+        margin-top: -39% !important;
+        margin-right: 0% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 52.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: 4% !important;
+        margin-left: -3% !important;
+    }
+}*/
+
+/*@media screen and (device-height:823px) {
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 29% !important;
+        font-weight: 500 !important;
+        line-height: 1.2 !important;
+        margin-top: -2% !important;
+        margin-left: 16% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+    .elementH6 {
+        margin-top: 0.2% !important
+    }
+
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -21.4% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -21.4% !important
+    }
+
+    .imgCargoConfirrmar {
+        width: 100% !important;
+        margin-right: -21.4% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 23% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 36.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 50% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14% !important;
+        margin-left: 12% !important;
+        margin-top: -22% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: -3% !important;
+    }
+}*/
+
+/*@media screen and (device-height:568px) {
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: 66% !important;
+        margin-left: -9% !important
+    }
+
+    .NombreCandidatoFont {
+        font-weight: 500 !important;
+        line-height: 1 !important;
+        margin-top: -8% !important;
+        margin-left: 28%;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -30.4% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -30.4% !important
+    }
+ 
+
+    .imgCargoConfirrmar {
+        width: 100% !important;
+        margin-right: -31.4% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 1.5em !important;
+        margin-right: 0% !important;
+        margin-top: 35% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 34.2% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14% !important;
+        margin-left: 23% !important;
+        margin-top: -25% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:736px) {
+    .imgCargoConfirrmar {
+        width: 100% !important;
+        margin-right: -21.4% !important;
+    }
+       
+    .PositionCandidatoFontA {
+        font-size: 1.5em !important;
+        margin-right: 0% !important;
+        margin-top: 37% !important;
+    }
+    .elementH6 {
+        margin-top: 0.2% !important;
+    }
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 37.4% !important;
+        width: 12% !important;
+    }
+
+    .NombreCandidatoFont {
+        font-size: 31% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 1% !important;
+        margin-left: 0 !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 78% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: 0% !important;
+        margin-left: 0% !important;
+    }
+}*/
+
+/*@media screen and (device-height:812px) {
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 27% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -4% !important;
+        margin-left: 29% !important
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        
+    }
+
+
+    .PositionCandidatoFontA {
+        font-size: 1.8em !important;
+        margin-top: 29% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 46% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-left: 23% !important;
+        margin-top: -24% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:1024px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFontA {
+        margin-bottom: -7px !important;
+        font-size: 2em !important;
+        margin-right: -89%;
+        margin-right: 64% !important;
+        margin-top: 19% !important
+    }
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 27.7% !important;
+        width: 9% !important;
+    }
+    .NombreCandidatoFontA {
+        font-size: 58% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;      
+        margin-left: 0% !important;
+        margin-top: -17% !important;
+        margin-right: 18% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 25% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -10% !important;
+        margin-left: 24% !important;
+        margin-right: -3% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 100% !important;
+        text-align: CENTER !important;
+        font-size: medium;
+        margin-top: -2% !important;
+    }
+}*/
+
+/*@media screen and (device-height:1366px) {
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -4% !important;
+        margin-left: 20% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 99.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: 0% !important;
+    }
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFontA {
+        margin-bottom: -7px !important;
+        font-size: 3em !important;
+        margin-right: -89%;
+        margin-right: 46% !important;
+        margin-top: 8% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 28.7% !important;
+        width: 9% !important;
+    }
+    .NombreCandidatoFontA {
+        font-size: 78% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-left: 10% !important;
+        margin-top: -17% !important;
+        margin-right: 24% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:360px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    #imgPartido {
+        width: 100% !important;
+        margin-left: -15.4% !important
+    }
+
+    #imgCargo {
+        width: 100% !important;
+        margin-right: -15.4% !important
+    }
+
+    .PositionCandidatoFont {
+        font-size: x-large !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 36% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 3%;
+        margin-left: 14%
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:411px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFont {
+        font-size: 84% !important
+    }
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 21.6% !important;
+        width: 14% !important;
+    }
+    .PositionCandidatoFontA {
+        font-size: 2em !important;
+        margin-right: 0% !important;
+        margin-top: 7% !important;
+    }
+    .NombreCandidatoFont {
+        font-size: 37% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+    .NombreCandidatodivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 33.9% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: 0% !important;
+        margin-left: 1% !important;
+    }
+    .NombreCandidatoFontA {
+        font-size: 56% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-left: -1%;
+        margin-top: -37% !important;
+        width: 100% !important;
+    }
+}*/
+
+
+/*@media screen and (device-height:375px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFont {
+        font-size: 84% !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 27% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -17%;
+        margin-left: 26%
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:768px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFont {
+        font-size: 84% !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 40% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -6%;
+        margin-left: 17%
+    }
+
+    .NombreCandidatodiv {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:640px) {
+    .elementH6 {
+        margin-top: .2% !important
+    }
+
+    .PositionCandidatoFontA {
+        font-size: 1.5em !important;
+
+        margin-right: 0% !important;
+        margin-top: 37% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+
+        padding-top: 2% !important;
+        MARGIN-LEFT: 35.4% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 44% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 27%;
+        margin-top: -41% !important;
+        margin-right: -27% !important
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+
+/*@media screen and (device-height:667px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFont {
+        margin-bottom: -7px !important;
+        font-size: smaller !important
+    }
+
+    .NombreCandidatoFont {
+        font-size: 27% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -4% !important;
+        margin-left: -27% !important;
+    }
+
+    .NombreCandidatodiv {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        WIDTH: 54.5% !important;
+        text-align: CENTER !important;
+        font-size: x-large !important;
+        margin-top: -2% !important;
+        margin-left: -3% !important
+    }
+
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFontA {
+        font-size: 1.5em !important;
+        margin-right: 0% !important;
+        margin-top: 35% !important;
+    }
+
+    .PositionCandidatoDivA {
+        position: absolute !important;
+        z-index: 1 !important;
+        color: #000 !important;
+        text-align: center !important;
+        padding-top: 2% !important;
+        MARGIN-LEFT: 35.8% !important;
+        width: 14% !important;
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 38% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14% !important;
+        margin-left: 25% !important;
+        margin-top: -23% !important;
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+/*@media screen and (device-height:414px) {
+    .elementH6 {
+        margin-top: -1.8% !important
+    }
+
+    .PositionCandidatoFontA {
+        margin-bottom: -7px !important;
+        font-size: 3em !important;
+        margin-right: -89%;
+        margin-right: 41% !important;
+        margin-top: 13% !important
+    }
+
+    .NombreCandidatoFontA {
+        font-size: 79% !important;
+        font-weight: 500 !important;
+        line-height: 1.1 !important;
+        margin-top: -14%;
+        margin-left: 27%;
+        margin-top: -21% !important;
+        margin-right: 8% !important
+    }
+
+    .NombreCandidatodivA {
+        position: absolute;
+        z-index: 1;
+        color: #000;
+        WIDTH: 52.5%;
+        text-align: CENTER;
+        font-size: x-large;
+        margin-top: -2% !important;
+        margin-left: -3%
+    }
+}*/
+
+.posicion {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.PosicionCandidato {
+  position: absolute;
+  z-index: 1;
+  color: #000;
+  text-align: center;
+  border: solid;
+  border-width: 1px;
+  background-color: ghostwhite;
+  height: 28px;
+}
+
+#imgCargo {
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 34%;
+}
+
+#imgPartido {
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 34%;
+}
+
+#dobleCandidato {
+  width: 30%
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite
+}
+
+a:hover{
+  color:black;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+      opacity: 15
+  }
+
+  50% {
+      opacity: .6
+  }
+
+  100% {
+      opacity: 5
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+      opacity: 15
+  }
+
+  50% {
+      opacity: .6
+  }
+
+  100% {
+      opacity: 5
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+      opacity: 15
+  }
+
+  50% {
+      opacity: .4
+  }
+
+  100% {
+      opacity: 5
+  }
+}
+/*Correccion Dynamica de texto*/
+
+@media (max-width: 800px) {
+  .PosicionCandidato {
+      position: absolute;
+      z-index: 1;
+      color: #000;
+      text-align: center;
+      padding: 0.15rem !important;
+      border: solid;
+      border-width: 1px;
+      background-color: ghostwhite;
+      height: 22px;
+  }
+  .heid {
+      margin-bottom: 0% !important;
+      margin-left: -26% !important;
+      width: 151%;
+      font-size: 1rem;
+  } 
+}
+
+@media (max-width: 767px) {
+  .candidato {
+      font-size: 8px;
+  }
+
+  h3 {
+      font-size: 16px
+  }
+
+  h4 {
+      font-size: 14px
+  }
+  .hTituloPrincipales {
+      font-size: 27px;
+  }
+
+  #imgCargo {
+      border-radius: 0px;
+      padding: 0px;
+      margin: 0px;
+      width: 65%;
+      height: auto;
+  }
+
+  #imgPartido {
+      border-radius: 0px;
+      padding: 0px;
+      margin: 0px;
+      width: 65%;
+      height: auto;
+  }
+
+  .candidato2 {
+      font-size: 8px;
+  }
+  .posicionConfirmar {
+      font-size: 15px !important;
+  }
+  .posicion {
+      font-size: 9px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .PosicionCandidato {
+      position: absolute;
+      z-index: 1;
+      color: #000;
+      text-align: center;
+      padding: 0.5rem !important;
+      border: solid;
+      border-width: 1px;
+      background-color: ghostwhite;
+      height: 28px;
+      
+  }
+  .heid {
+      margin-bottom: 0% !important;
+      margin-left: -26% !important;
+      width: 151%;
+      font-size: 1rem;
+  } 
+}
+
+@media (max-width: 412px) {
+  .PosicionCandidato {
+      position: absolute;
+      z-index: 1;
+      color: #000;
+      text-align: center;
+      padding: 0.25rem !important;
+      border: solid;
+      border-width: 1px;
+      background-color: ghostwhite;
+      height: 20px;
+  }
+  .heid {
+      margin-bottom: 0% !important;
+      margin-left: -26% !important;
+      width: 151%;
+      font-size: 1rem;
+  }
+  #imgCargo {
+      border-radius: 0px;
+      padding: 0px;
+      margin: 0px;
+      width: 80%;
+      height: auto;
+  }
+
+  #imgPartido {
+      border-radius: 0px;
+      padding: 0px;
+      margin: 0px;
+      width: 80%;
+      height: auto;
+  }
+}
