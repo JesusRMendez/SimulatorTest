@@ -2,6 +2,21 @@ import React from 'react';
 // import './HeaderTitle.css';
 
 function ConfirmationSelected(props) {
+    function position(number){
+        if (number !== ""){
+            return(
+                <div style={{display: "flex",justifyContent: "flex-end"}}>
+                    <div class="ml-auto p-2 bd-highlight PosicionCandidato" 
+                            style={{width: "9%",padding: "0 !important",height: "14% !important"}}>
+                        <p class="posicion posicionConfirmar">{number}</p>
+                    </div>        
+                </div>
+               
+    
+            );
+        }
+     
+    }
     return (
         <div className="row">
             <div className="col-md-12">
@@ -9,6 +24,8 @@ function ConfirmationSelected(props) {
                     <div className="d-flex justify-content-center bd-highlight mb-3">
                         <div className="p-2 bd-highlight imagenConfirmar" 
                         style={{borderWidth:"1px", marginBottom: "5%", padding:"0px !important", margin:"0px"}}>
+                          
+                            {position(props.number)}
                             <div className="ml-6">
                                     <img src={props.src} alt="Lights" className="img-thumbnail" style={{border: "0px"}}/>
                                 

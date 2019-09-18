@@ -16,16 +16,35 @@ class App extends React.Component{
     TeamName: ["Partido Abanico", "PRM", "No Deseo Votar"],
     teamSelected: 0,
     viewOrder: ["teamSelected", "teamConfirmation", "presidentSelected"],
-    currentOrder: "teamSelected"
+    currentOrder: "teamSelected",
+    currentConfirmationImage: "",
+    currentNumber: "",
+    nextViewName: "",
   }
   nextView(view){
     this.setState({currentOrder: view});
   }
-  generateThumbs(count, image, indexImage, candidateName, positionName){
+  setCurrentConfirmation(currentImage, i, nextViewName){
+    this.setState({currentConfirmationImage: currentImage, currentNumber: i, nextViewName: nextViewName});
+    this.nextView("confirmation");
+  }
+  generateThumbs(count, image, indexImage, candidateName, positionName, nextViewName){
   var thumbails = [];
+  var self = this;
     for(var i = 1; i<count; i++){
+    let currentImage = "";
+    if (i === count){
+      currentImage ="images/none.PNG";
+      }else if (i !== indexImage){
+        currentImage ="images/candidato.PNG";
+      }else{
+        currentImage = image;
+      }
+      
       thumbails.push(<Thumbail positionName={positionName} positionNumber={i} 
-            image={indexImage === i ? image : ""} lastImage={i === count} canditateName={indexImage === i ? candidateName : ""} />)
+            src={currentImage}
+            canditateName={indexImage === i ? candidateName : ""}
+            onclick={this.setCurrentConfirmation.bind(self, currentImage, i, nextViewName)} />)
     }
     return thumbails;
   }
@@ -44,16 +63,20 @@ class App extends React.Component{
       </div>
     )
   }
+  showConfirmation(image, indexConfirmation, nextViewName){
+    return <ConfirmationSelected src={image} number={indexConfirmation}
+          onclick={this.nextView.bind(this, nextViewName)} />
+  }
   showTeamConfirmation(indexConfirmation){
     return <ConfirmationSelected src={this.state.imagesTeam[this.state.teamSelected]} 
-        onclick={this.nextView.bind(this, indexConfirmation)} />
+        onclick={this.nextView.bind(this, indexConfirmation)} number="" />
   }
   showPresident(){
     return (
       <div className="row">
         <div className="col-md-12">
           <div className="row">
-              {this.generateThumbs(16, this.state.photos[0], 2, "Luis Abinader", "PRESIDENTE(A)")}
+              {this.generateThumbs(16, this.state.photos[0], 2, "Luis Abinader", "PRESIDENTE(A)", "diputadoView")}
           </div>
           </div>
         </div>
@@ -69,6 +92,9 @@ class App extends React.Component{
         return this.showTeamConfirmation("presidentSelected");
         case "presidentSelected":
             return this.showPresident();
+        case "confirmation":
+            return this.showConfirmation(this.state.currentConfirmationImage,  this.state.currentNumber, this.state.nextViewName);
+          
       default:
         return "";
     }
